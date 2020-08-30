@@ -1,0 +1,14 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-existing-dockerfile
+{
+	"name": "Python 3.8",
+	"context": "..",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "python",
+	"workspaceFolder": "/workspace",
+	"extensions": [
+		"ms-python.python"
+	]
+}

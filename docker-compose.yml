@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USERNAME: docker
+    volumes:
+      - type: bind
+        source: .
+        target: /workspace
+        consistency: consistent
+    tty: true
+    user: docker
+    working_dir: /workspace
